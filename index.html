@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatiable" content="ie=edge">
+	<title>Slider</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<ul class="carousel" data-target="carousel">
+			<li class="card" data-target="card">A</li>
+			<li class="card" data-target="card">B</li>
+			<li class="card" data-target="card">C</li>
+			<li class="card" data-target="card">D</li>
+			<li class="card" data-target="card">E</li>
+			<li class="card" data-target="card">F</li>
+			<li class="card" data-target="card">G</li>
+			<li class="card" data-target="card">H</li>
+			<li class="card" data-target="card">I</li>
+			<li class="card" data-target="card">J</li>
+			<li class="card" data-target="card">K</li>
+			<li class="card" data-target="card">L</li>
+		</ul>
+		<div class="button-wrapper">
+			<button class="left" data-action="slideLeft">L</button>
+			<button class="right" data-action="slideRight">R</button>
+		</div> 
+	</div>
+</body>
+<script src="./main.js"></script>
+
+<script>
+ const options = {
+ 	itemsInView : 3
+ }
+
+ let slider = new Slider(options);
+ slider.init();
+
+</script>
+</html>
