@@ -49,7 +49,7 @@
 		slideTo(pos){
 			const that = this;
 			requestAnimationFrame(function(){
-				that.carouselElm.style.transform = `translate(${pos}px)`;
+				that.carouselElm.style.transform = `translateX(${pos}px)`;
 			});
 		}
 
